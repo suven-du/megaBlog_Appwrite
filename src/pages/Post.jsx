@@ -13,12 +13,9 @@ function Post() {
     if (!userData) {
         return <div>Loading user data...</div>;
     }
-    console.log("userdataaaaaaaaaaaaaaaaafromslug",userData)
 
-    console.log("posttttttttttttttttttttttttttfromslug" ,post)
 
     const isAuther=post && userData? post.userId === userData.$id : false; 
-    //console.log("postuserIddd",post.userId)
          
     useEffect(()=>{
         if(slug){

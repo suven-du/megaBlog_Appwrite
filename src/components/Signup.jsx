@@ -19,10 +19,9 @@ function Signup() {
             if(userData){
                 const uData=await authservice.getCurrentUser()
               
-                if(uData){console.log("here")
+                if(uData){
                     dispatch(login(uData))
                     navigate("/")
-                    console.log("there we go sign")
                   };
                
             }

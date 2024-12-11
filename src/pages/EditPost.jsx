@@ -11,7 +11,6 @@ function EditPost() {
             appwriteService.getpost(slug).then((post)=>{
                 if(post){
                     setPost(post)
-                    console.log("post fron edit page",  post)
                 }
             })
         }else{

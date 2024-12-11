@@ -10,7 +10,6 @@ const authStatus=useSelector((state)=>state.auth?.status)
     useEffect(()=>{
         Service.getPosts().then((posts)=>{
             if(posts){
-                console.log("postesssssssssssssssssss",posts)
                 setPosts(posts.documents)
             }
         })
