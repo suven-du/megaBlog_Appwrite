@@ -70,13 +70,13 @@ function Post() {
                   />
 
                   {isAuther && (
-                    <div className='absolute right-6 top-6'>
+                    <div className='absolute right-10 top-22 '>
                         <Link to={`/edit-post/${post.$id}`}>
                         <Button className='mr-3 bg-green-500'>
                                Edit
                         </Button>
                         </Link>
-                        <Button className='bg-red-500' onClick={deletePost}>
+                        <Button className= 'mr-2 bg-red-500' onClick={deletePost}>
                             Delete
                         </Button>
                     </div>

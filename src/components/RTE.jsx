@@ -11,7 +11,7 @@ return(
     control={control}
     render={({field:{onChange}})=>( <Editor
         initialValue={defaultvalue}
-        apiKey='qyzbo67bzyo29ixd2f2tbj3js5wtrptayuhl914ul4kttvct'
+      apiKey='7axe0wo24szrxwkqxdhuekhqzptuupr4vg2btwvhlxktzjq5'
         init={{
             initialValue: defaultvalue,
             height: 500,
@@ -40,8 +40,12 @@ return(
             ],
             toolbar:
             "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help",
-            content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"
+            content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+
         }}
+        
         onEditorChange={onChange}
         />)}
     />
